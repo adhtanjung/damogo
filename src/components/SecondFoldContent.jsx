@@ -4,7 +4,7 @@ import mobilephone from "../assets/cellphone.png";
 function SecondFoldContent() {
 	return (
 		<div className="secondMainContainer">
-			<div className="secondContainer container">
+			<div className="secondContainer container" id="second-fold">
 				<div>
 					<h3>DAMOGO </h3> <h1>Demo Aplikasi</h1>
 				</div>

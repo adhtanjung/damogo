@@ -2,6 +2,9 @@ $linkColor: #00a3f4;
 
 .headerContainer {
 	width: 100%;
+	position: fixed;
+	z-index: 102;
+	padding-top: 20px;
 	.header {
 		max-width: 1100px;
 		margin: 0px auto;
@@ -36,4 +39,14 @@ $linkColor: #00a3f4;
 			}
 		}
 	}
+}
+.scroll {
+	transition: 250ms;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 0px 16px 30px -5px rgba(0, 0, 0, 0.18);
+	-webkit-box-shadow: 0px 16px 30px -5px rgba(0, 0, 0, 0.18);
+	-moz-box-shadow: 0px 16px 30px -5px rgba(0, 0, 0, 0.18);
+	background-color: white;
+	padding-bottom: 10px;
 }

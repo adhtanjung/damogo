@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Buah from "../assets/buah.png";
 import "../styles/landing.scss";
 import NavBar from "./NavBar";
 
-function FirstFoldContent() {
+function FirstFoldContent(props) {
 	return (
 		<div className="firstMainContainer">
 			<NavBar />
-			<div className="firstContainer container">
+			<div className="firstContainer container" id="first-fold">
 				<div className="firstLeft">
 					<h1>
 						Create Taste, Not <span> Waste</span>
