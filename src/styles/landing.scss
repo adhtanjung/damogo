@@ -1,0 +1,196 @@
+$mainColor: #00a3f4;
+$textColor: #5a5a5a;
+$hoveredMainColor: #0191da;
+.container {
+	max-width: 1100px;
+	margin: 0px auto;
+	display: flex;
+}
+.firstMainContainer {
+	background: rgb(224, 244, 255);
+	background: linear-gradient(
+		135deg,
+		rgba(224, 244, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 35%,
+		rgba(255, 255, 255, 1) 100%
+	);
+	padding-top: 20px;
+
+	// first fold
+	.firstContainer {
+		display: flex;
+		padding-top: 20px;
+		justify-content: space-between;
+		width: 100%;
+		height: 500px;
+		.firstLeft {
+			width: 48%;
+
+			h1 {
+				font-size: 80px;
+
+				span {
+					color: #1fa385;
+				}
+			}
+			p {
+				color: $textColor;
+			}
+			.firstButton {
+				margin-top: 28px;
+				button {
+					width: 184px;
+					background-color: $mainColor;
+					color: white;
+					padding: 12px 14px;
+					border-radius: 50px;
+					border: none;
+					font-size: 16px;
+					cursor: pointer;
+					outline: none;
+					box-shadow: 0px 10px 39px -1px rgba(1, 145, 218, 0.62);
+					-webkit-box-shadow: 0px 10px 39px -1px rgba(1, 145, 218, 0.62);
+					-moz-box-shadow: 0px 10px 39px -1px rgba(1, 145, 218, 0.62);
+
+					&:hover {
+						background-color: $hoveredMainColor;
+						transition: 250ms;
+					}
+				}
+				.bertemuButton {
+					background-color: white;
+					margin-left: 24px;
+					color: $mainColor;
+					border: 1px solid $mainColor;
+					outline: none;
+					box-shadow: none;
+					&:hover {
+						color: white;
+						outline: none;
+					}
+				}
+			}
+		}
+
+		.firstRight {
+			padding: 20px 0;
+			width: 48%;
+			display: flex;
+			justify-content: center;
+			.blueBg {
+				position: absolute;
+				left: 50%;
+				color: #dff4ff;
+				right: 50%;
+				height: 350px;
+				top: 200px;
+				width: 759px;
+				background-color: #dff4ff;
+				border-top-left-radius: 100px;
+				z-index: 100;
+			}
+			.blueCircular {
+				z-index: 101;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
+				-webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
+				-moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
+				border-radius: 50%;
+				background-color: $mainColor;
+				width: 440px;
+				height: 440px;
+				.orangeCircular {
+					box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25) inset;
+					-webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25) inset;
+					-moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25) inset;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 360px;
+					height: 360px;
+					border-radius: 50%;
+					background-color: #feba00;
+					.greenCircular {
+						box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25) inset;
+						-webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25) inset;
+						-moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25) inset;
+						width: 290px;
+						height: 290px;
+						border-radius: 50%;
+						background-color: #009170;
+					}
+				}
+			}
+			.image {
+				width: 450px;
+				position: relative;
+				right: 80px;
+			}
+		}
+	}
+}
+
+// second fold
+.secondMainContainer {
+	background: rgb(223, 244, 255);
+	background: linear-gradient(
+		265deg,
+		rgba(223, 244, 255, 1) 0%,
+		rgba(255, 255, 255, 0) 83%,
+		rgba(255, 255, 255, 1) 100%
+	);
+	box-shadow: 50px 50px 50px rgba(255, 255, 255, 1) inset;
+	.secondContainer {
+		margin-top: 32px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		.detail {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			.left {
+				width: 40%;
+			}
+			.right {
+				width: 60%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				p {
+					span {
+						color: #00a3f4;
+						font-weight: 900;
+					}
+					font-size: 24px;
+				}
+				button {
+					width: 184px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					gap: 10px;
+					background-color: $mainColor;
+					color: white;
+					padding: 12px 14px;
+					border-radius: 50px;
+					border: none;
+					font-size: 16px;
+					cursor: pointer;
+					outline: none;
+					box-shadow: 0px 10px 39px -1px rgba(1, 145, 218, 0.62);
+					-webkit-box-shadow: 0px 10px 39px -1px rgba(1, 145, 218, 0.62);
+					-moz-box-shadow: 0px 10px 39px -1px rgba(1, 145, 218, 0.62);
+
+					&:hover {
+						background-color: $hoveredMainColor;
+						transition: 250ms;
+					}
+				}
+			}
+		}
+	}
+}
