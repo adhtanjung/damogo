@@ -251,65 +251,95 @@ $hoveredSecondaryColor: #e7aa00;
 
 // third fold
 .thirdMainContainer {
+	display: flex;
 	background: #fab906;
 	background: linear-gradient(270deg, #fab906 0%, #ffffff 80%);
 	background: -webkit-linear-gradient(270deg, #fab906 0%, #ffffff 80%);
 	background: -moz-linear-gradient(270deg, #fab906 0%, #ffffff 80%);
-	.thirdContainer {
+	.containerTmp {
+		max-width: 1100px;
+		max-height: 500px;
+		margin: 0 auto;
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 30px 0;
-		.left {
-			width: 45%;
+		.thirdContainer {
 			display: flex;
-			flex-direction: column;
-			gap: 20px;
-			.firstLeft {
-				h3 {
-					color: $secondaryColor;
-					letter-spacing: 2px;
+			justify-content: space-between;
+			align-items: center;
+			padding: 30px 0;
+			.left {
+				width: 45%;
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+				.firstLeft {
+					h3 {
+						color: $secondaryColor;
+						letter-spacing: 2px;
+						font-weight: 400;
+					}
+					h2 {
+						font-size: xx-large;
+					}
 				}
-				h2 {
-					font-size: xx-large;
+				.secondLeft {
+					p {
+						font-size: 20px;
+						color: $textColor;
+					}
 				}
-			}
-			.secondLeft {
-				p {
-					font-size: 20px;
-					color: $textColor;
-				}
-			}
-			.thirdLeft {
-				button {
-					width: 184px;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					gap: 10px;
-					background-color: $secondaryColor;
-					color: white;
-					padding: 12px 14px;
-					border-radius: 50px;
-					border: none;
-					font-size: 16px;
-					cursor: pointer;
-					outline: none;
-					box-shadow: 0px 10px 39px -1px $secondaryColor;
-					-webkit-box-shadow: 0px 10px 39px -1px $secondaryColor;
-					-moz-box-shadow: 0px 10px 39px -1px $secondaryColor;
+				.thirdLeft {
+					button {
+						width: 184px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						gap: 10px;
+						background-color: $secondaryColor;
+						color: white;
+						padding: 12px 14px;
+						border-radius: 50px;
+						border: none;
+						font-size: 16px;
+						cursor: pointer;
+						outline: none;
+						box-shadow: 0px 10px 39px -1px $secondaryColor;
+						-webkit-box-shadow: 0px 10px 39px -1px $secondaryColor;
+						-moz-box-shadow: 0px 10px 39px -1px $secondaryColor;
 
-					&:hover {
-						background-color: $hoveredSecondaryColor;
-						transition: 250ms;
+						&:hover {
+							background-color: $hoveredSecondaryColor;
+							transition: 250ms;
+						}
 					}
 				}
 			}
+			.right {
+				width: 45%;
+				display: flex;
+				justify-content: flex-end;
+				img {
+					z-index: 102;
+					position: relative;
+					left: 200px;
+				}
+			}
 		}
-		.right {
-			width: 55%;
-			display: flex;
-			justify-content: flex-end;
+		.bgDesign {
+			// position: absolute;
+			// left: 850px;
+			position: relative;
+			right: 250px;
+			width: 600px;
+			height: 100%;
+			box-shadow: 0px 0px 23px -4px rgba(0, 0, 0, 0.75) inset;
+
+			box-shadow: 16px 0px 23px -16px rgba(0, 0, 0, 0.65) inset;
+			-webkit-box-shadow: 16px 0px 23px -16px rgba(0, 0, 0, 0.65) inset;
+			-moz-box-shadow: 16px 0px 23px -16px rgba(0, 0, 0, 0.65) inset;
+			// border-bottom-left-radius: 300px;
+			border-bottom-left-radius: 250px;
+			border-top-left-radius: 250px;
+			// border-top-left-radius: 30%;
 		}
 	}
 }
