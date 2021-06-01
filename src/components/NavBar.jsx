@@ -34,8 +34,22 @@ function NavBar() {
 						Beranda
 					</div>
 
-					<div className="navbarLink">Restaurant</div>
-					<div className="navbarLink">Supplier</div>
+					<div
+						className="navbarLink"
+						onClick={() =>
+							document.getElementById("resto-fold").scrollIntoView()
+						}
+					>
+						Restaurant
+					</div>
+					<div
+						className="navbarLink"
+						onClick={() =>
+							document.getElementById("supplier-fold").scrollIntoView()
+						}
+					>
+						Supplier
+					</div>
 				</div>
 			</div>
 		</div>
