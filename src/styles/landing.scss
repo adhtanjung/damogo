@@ -147,6 +147,11 @@ $hoveredMainColor: #0191da;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
+		h3 {
+			color: $mainColor;
+			font-weight: 400;
+			letter-spacing: 2px;
+		}
 		.detail {
 			display: flex;
 			align-items: center;
