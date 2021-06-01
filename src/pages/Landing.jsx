@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import FifthFoldContent from "../components/FifthFoldContent";
 import FirstFoldContent from "../components/FirstFoldContent";
+import Footer from "../components/Footer";
 import FourthFoldContent from "../components/FourthFoldContent";
 import SecondFoldContent from "../components/SecondFoldContent";
 import ThirdFoldContent from "../components/ThirdFoldContent";

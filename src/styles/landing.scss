@@ -97,7 +97,7 @@ $pad-size: "only screen and (min-width: 480px)";
 				right: 50%;
 				height: 350px;
 				top: 200px;
-				width: 759px;
+				width: 659px;
 				background-color: #dff4ff;
 				border-top-left-radius: 100px;
 				z-index: 100;
@@ -544,6 +544,79 @@ $pad-size: "only screen and (min-width: 480px)";
 				color: #005844;
 				background: #005844;
 				border-radius: 50%;
+			}
+		}
+	}
+}
+
+// footer
+.footerMain {
+	position: relative;
+	z-index: 4;
+	width: auto;
+	padding: 40px 0;
+	background: rgb(223, 244, 255);
+	background: linear-gradient(
+		0deg,
+		rgba(223, 244, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 91%,
+		rgba(255, 255, 255, 1) 100%
+	);
+	.footerContainer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.footerLeftContainer {
+			display: flex;
+			flex-direction: column;
+			width: 55%;
+			.companyLogo {
+				margin-bottom: 40px;
+			}
+			.companyDetails {
+				display: flex;
+				gap: 30px;
+				.followUs {
+					width: 50%;
+					display: flex;
+					flex-direction: column;
+					.wh {
+						font-weight: bolder;
+						margin-bottom: 10px;
+					}
+					span {
+						&:hover {
+							cursor: pointer;
+						}
+					}
+				}
+				.contactUs {
+					@extend .followUs;
+					.wh {
+						font-weight: bolder;
+					}
+					.hd {
+						.re {
+							font-weight: 600;
+						}
+						span {
+							&:hover {
+								cursor: default;
+							}
+						}
+					}
+				}
+			}
+		}
+		.footerRightContainer {
+			width: 40%;
+
+			.downloadImg {
+				display: flex;
+				gap: 10px;
+				img {
+					cursor: pointer;
+				}
 			}
 		}
 	}
