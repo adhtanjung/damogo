@@ -6,9 +6,17 @@ function SecondFoldContent() {
 		<div className="secondMainContainer">
 			<div className="secondContainer container" id="second-fold">
 				<h3>DAMOGO </h3> <h1>Demo Aplikasi</h1>
+				<br />
+				<br />
 				<div className="detail">
 					<div className="left">
-						<img src={mobilephone} alt="" height="700px" />
+						<div className="darkBlueLine">
+							<div className="blueLine">
+								<div className="blueCircular">
+									<img src={mobilephone} alt="" height="550px" />
+								</div>
+							</div>
+						</div>
 					</div>
 					<div className="right">
 						<p>

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import FirstFoldContent from "../components/FirstFoldContent";
 import SecondFoldContent from "../components/SecondFoldContent";
+import ThirdFoldContent from "../components/ThirdFoldContent";
 import "../styles/landing.scss";
 
 function Landing(props) {
@@ -18,9 +19,10 @@ function Landing(props) {
 	// 	};
 	// }, []);
 	return (
-		<div>
+		<div className="main">
 			<FirstFoldContent />
 			<SecondFoldContent />
+			<ThirdFoldContent />
 		</div>
 	);
 }

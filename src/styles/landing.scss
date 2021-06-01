@@ -1,6 +1,15 @@
 $mainColor: #00a3f4;
 $textColor: #5a5a5a;
+$lightColor: #dff4ff;
 $hoveredMainColor: #0191da;
+$secondaryColor: #ffbb00;
+$hoveredSecondaryColor: #e7aa00;
+
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+}
 .container {
 	max-width: 1100px;
 	margin: 0px auto;
@@ -141,9 +150,13 @@ $hoveredMainColor: #0191da;
 		rgba(255, 255, 255, 0) 83%,
 		rgba(255, 255, 255, 1) 100%
 	);
-	box-shadow: 50px 50px 50px rgba(255, 255, 255, 1) inset;
+	// box-shadow: 50px 50px 50px rgba(255, 255, 255, 1);
+	box-shadow: 0px 0px 143px 78px rgba(255, 255, 255, 1) inset;
+	-webkit-box-shadow: 0px 0px 143px 78px rgba(255, 255, 255, 1) inset;
+	-moz-box-shadow: 0px 0px 143px 78px rgba(255, 255, 255, 1) inset;
+	// box-shadow: 50px 50px 50px #ffffff inset, 100px 100px 100px #ffffff;
+	height: 650px;
 	.secondContainer {
-		margin-top: 32px;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
@@ -152,16 +165,52 @@ $hoveredMainColor: #0191da;
 			font-weight: 400;
 			letter-spacing: 2px;
 		}
+		h1 {
+			font-weight: 900;
+		}
 		.detail {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
 			width: 100%;
 			.left {
-				width: 40%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 45%;
+				.darkBlueLine {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 460px;
+					height: 460px;
+					border-radius: 50%;
+					background-color: transparent;
+					border: 3px solid $mainColor;
+
+					.blueLine {
+						width: 420px;
+						height: 420px;
+						border-radius: 50%;
+						background-color: transparent;
+						border: 3px solid $lightColor;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						.blueCircular {
+							width: 380px;
+							height: 380px;
+							border-radius: 50%;
+							background-color: $lightColor;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+						}
+					}
+				}
 			}
 			.right {
-				width: 60%;
+				width: 50%;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -196,6 +245,71 @@ $hoveredMainColor: #0191da;
 					}
 				}
 			}
+		}
+	}
+}
+
+// third fold
+.thirdMainContainer {
+	background: #fab906;
+	background: linear-gradient(270deg, #fab906 0%, #ffffff 80%);
+	background: -webkit-linear-gradient(270deg, #fab906 0%, #ffffff 80%);
+	background: -moz-linear-gradient(270deg, #fab906 0%, #ffffff 80%);
+	.thirdContainer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 30px 0;
+		.left {
+			width: 45%;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			.firstLeft {
+				h3 {
+					color: $secondaryColor;
+					letter-spacing: 2px;
+				}
+				h2 {
+					font-size: xx-large;
+				}
+			}
+			.secondLeft {
+				p {
+					font-size: 20px;
+					color: $textColor;
+				}
+			}
+			.thirdLeft {
+				button {
+					width: 184px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					gap: 10px;
+					background-color: $secondaryColor;
+					color: white;
+					padding: 12px 14px;
+					border-radius: 50px;
+					border: none;
+					font-size: 16px;
+					cursor: pointer;
+					outline: none;
+					box-shadow: 0px 10px 39px -1px $secondaryColor;
+					-webkit-box-shadow: 0px 10px 39px -1px $secondaryColor;
+					-moz-box-shadow: 0px 10px 39px -1px $secondaryColor;
+
+					&:hover {
+						background-color: $hoveredSecondaryColor;
+						transition: 250ms;
+					}
+				}
+			}
+		}
+		.right {
+			width: 55%;
+			display: flex;
+			justify-content: flex-end;
 		}
 	}
 }
