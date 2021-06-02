@@ -408,7 +408,7 @@ $screen-md-max: ($screen-lg-min - 1);
 							font-size: 20px;
 							margin: 0;
 						}
-						font-size: xx-large;
+						font-size: x-large;
 					}
 				}
 				.secondLeft {
@@ -416,7 +416,7 @@ $screen-md-max: ($screen-lg-min - 1);
 						@media (max-width: $screen-sm-max) {
 							font-size: 12px;
 						}
-						font-size: 20px;
+						font-size: 18px;
 						color: $textColor;
 					}
 				}
