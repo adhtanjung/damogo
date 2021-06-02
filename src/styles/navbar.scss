@@ -7,6 +7,7 @@ $screen-lg-min: 1200px;
 $screen-md-max: ($screen-lg-min - 1);
 .headerContainer {
 	width: 100%;
+	transition: 250ms;
 	position: fixed;
 	z-index: 902;
 	padding-top: 20px;
